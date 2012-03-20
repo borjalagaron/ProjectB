@@ -43,11 +43,12 @@
               <input type="text" class="search-query" placeholder="Search">
 			</form>
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
+          <!--    <li><a href="#">Courses</a></li>
               <li><a href="#">Top</a></li>
-              <li><a href="#">Create</a></li>
+              <li><a href="#">Create</a></li>-->
               <li><a href="signup.jsp">Sign Up</a></li>
               <li><a href="login.jsp">Log In</a></li>
+          
               
             </ul>
           </div><!--/.nav-collapse -->
@@ -60,8 +61,8 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <p>Aprende a programar de una forma facil y sencilla!!</p>
+        <p><a class="btn btn-primary btn-large" href="signup.jsp">Sign up here &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->

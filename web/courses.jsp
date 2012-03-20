@@ -7,6 +7,10 @@
 <%
     javax.servlet.http.HttpSession sesion = request.getSession();
     String username = ((String) sesion.getAttribute("username"));
+    DB subjects = new DB();
+    subjects.connect();
+    //String subjectJAVA = subjects.subjectsJAVA().getString("subjectname");
+   // String subjectPLSQL = subjects.subjectsPLSQL().getString("subjectname");
 %>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -52,7 +56,7 @@
                                 <input type="text" class="search-query" placeholder="Search">
                             </form>
                             <li><a href="index.jsp">Home</a></li>
-                            <li><a href="courses.jsp">Courses</a></li>
+                            <li><a href="#">Courses</a></li>
                             <li><a href="#">Top</a></li>
                             <li><a href="#">Create</a></li>
                             <li class="active"><a href="#"><%=username%></a></li>
@@ -64,35 +68,31 @@
         </div>
 
         <div class="container">
-            <div class='edit_form' id='user'>
-                <h1>Java</h1>
-                <div id='flash'>
+            <div>
+                <h1>JAVA</h1>
+                <div>
+                    <ul>
+                         <li>
+                         <h3>Introduccion</h3>
+                         </li>
+                         <li>
+                         <h3>Tema 2</h3>
+                         </li>
+
+                    </ul>
                 </div>
-                
-                <div class='fields'>
-                    <h3>Change Password</h3>
-                    <hr>
-                    <form accept-charset="UTF-8" action="ChangePassword" class="edit_user" id="edit_user_4f026204db6c6b0003004a6e" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="xkklodkIvdMiJEWoRTZGtLSqZyLbRit/rHd8VOhFexs=" /></div>
-                        <table>
-                            <tr>
-                                <td><label for="user_current_password">Current password</label></td>
-                                <td><input id="user_current_password" name="current_password" size="30" type="password" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_password">New password</label></td>
-                                <td><input id="user_password" name="password" size="30" type="password" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_password_confirmation">Password confirmation</label></td>
-                                <td><input id="user_password_confirmation" name="password_confirmation" size="30" type="password" /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input name="commit" type="submit" value="Change Password" /></td>
-                            </tr>
-                        </table>
-                    </form>
+                <h1>PL/SQL</h1>
+                <div>
+                    <ul>
+                         <li>
+                         <h3>Introduccion PL SQL</h3>
+                         </li><li>
+                         <h3>Tema 2 PL SQL</h3>
+                         </li>
+
+                    </ul>
                 </div>
+            </div>
 
                 <hr>
 

@@ -11,6 +11,7 @@ package ProjectB;
  */
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public final class DB {
@@ -125,6 +126,16 @@ public final class DB {
         st.executeUpdate("update user set email='"+email+"' where username='"+username+"'");
     }
 
+    public ResultSet subjectsJAVA() throws SQLException{
+                cdr = st.executeQuery("SELECT subjectname FROM subject where course_idcourse='1'");
+        return cdr;
+    }
+    
+    public ResultSet subjectsPLSQL() throws SQLException{
+                cdr = st.executeQuery("SELECT subjectname FROM subject where course_idcourse='2'");
+        return cdr;
+    }
+    
 
     public void createUser(
             String username,String password,String email) throws SQLException{

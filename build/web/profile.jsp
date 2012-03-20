@@ -52,7 +52,7 @@
                                 <input type="text" class="search-query" placeholder="Search">
                             </form>
                             <li><a href="index.jsp">Home</a></li>
-                            <li><a href="#">Courses</a></li>
+                            <li><a href="courses.jsp">Courses</a></li>
                             <li><a href="#">Top</a></li>
                             <li><a href="#">Create</a></li>
                             <li class="active"><a href="#"><%=username%></a></li>
@@ -65,56 +65,10 @@
 
         <div class="container">
             <div class='edit_form' id='user'>
-                <h1>Edit Account</h1>
+                <h1>Java</h1>
                 <div id='flash'>
                 </div>
-<!--
-                <div class='fields'>
-                    <h3>Basic Information</h3>
-                    <hr>
-                    <form accept-charset="UTF-8" action="UpdateUser" class="edit_user" enctype="multipart/form-data" id="update_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="xkklodkIvdMiJEWoRTZGtLSqZyLbRit/rHd8VOhFexs=" /></div>
-                        <table>
-                            <tr class='set_username'>
-                                <td><label for="user_username">Username</label></td>
-                                <td style='width: 100px;'><input id="user_username" name="username" size="30" type="text" value="username" /></td>
-                                <td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_email">Email</label></td>
-                                <td style='width: 100px;'><input id="user_email" name="email" size="30" type="email" value="email" /></td>
-                                <td>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><label for="user_first_name">First Name</label></td>
-                                <td><input id="user_first_name" name="firstName" size="30" type="text" value="firstName" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_last_name">Last Name</label></td>
-                                <td><input id="user_last_name" name="lastName" size="30" type="text" value="lastName" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_last_name2">Last Name2</label></td>
-                                <td><input id="user_last_name2" name="lastName2" size="30" type="text" value="lastName2" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_city">City</label></td>
-                                <td><input id="user_city" name="city" size="30" type="text" value="city" /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="user_country">Country</label></td>
-                                <td><input id="user_country" name="country" size="30" type="text" value="country" /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input name="commit" type="submit" value="Update Profile" /></td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
--->
+                
                 <div class='fields'>
                     <h3>Change Password</h3>
                     <hr>
